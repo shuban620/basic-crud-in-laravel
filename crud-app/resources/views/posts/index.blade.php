@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <a href="{{ route('posts.create') }}">+ New Post</a>
+    <a style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;" href="{{ route('posts.create') }}">+ New Post</a>
     <hr>
 
     @forelse ($posts as $post)
