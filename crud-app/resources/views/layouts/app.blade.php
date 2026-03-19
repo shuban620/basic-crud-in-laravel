@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posts CRUD</title>
+    @livewireStyles
 </head>
 <body style="font-family: Arial, sans-serif; max-width: 900px; margin: 30px auto;">
     <h1 style="font-style: italic; background-color: #f0f0f0; padding: 10px; text-align: center;">Posts CRUD</h1>
@@ -21,5 +22,7 @@
     @endif
 
     @yield('content')
+
+    @livewireScripts
 </body>
 </html>

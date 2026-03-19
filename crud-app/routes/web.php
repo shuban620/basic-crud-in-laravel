@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\PostController;
+use App\Livewire\PostsCrud;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', fn () => redirect()->route('posts.index'));
-Route::resource('posts', PostController::class);
+Route::get('/', PostsCrud::class)->name('posts.livewire');
+Route::get('/posts', PostsCrud::class)->name('posts.index');
